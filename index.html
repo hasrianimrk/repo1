@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1{
+            font-size: 100px;       
+        }
+        button{
+            padding: 10px;
+            font-size: 20px;
+            background-color: rgba(205, 152, 255, 0.959);
+            color: white;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        input{
+            padding: 10px;
+            font-size: 20px;
+        }
+        .container {
+            text-align: center;
+            margin: 20px auto;
+            width: 50px;
+            padding-bottom: 30px;
+            /* height: 300px; */
+            max-width: 1200px;
+           /* background-color: rgba(205, 152, 255, 0.959);*/
+           border-radius: 10px;
+        }
+        .movie {
+            display: inline-block;
+            background-color: lightgray;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            vertical-align: top;
+            text-align: center;
+        }
+        .movie img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .movie h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .movie p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        #movieList {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        button:hover {
+            background-color: rgba(205, 152, 255, 0.959)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search Movies</h1>
+        <input type="text" placeholder="Type a movie name...." id="movieInput" >
+        <button onclick="searchMovie()">Search</button>
+    </div>
+
+        <div id="movieList"></div>
+        <script src="script.js"></script>
+</body>
+</html>
